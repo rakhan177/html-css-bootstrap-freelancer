@@ -1,0 +1,34 @@
+header{
+  height: 80px;
+  background-color: pink;
+}
+
+main > section{
+  text-align: center;
+}
+
+main > section:first-child{
+  background-color: lightgreen;
+  color: #fff;
+}
+
+main > section:first-child img{
+  height: 200px;
+}
+
+main > section:nth-child(2){
+}
+
+main > section:nth-child(2) img{
+  width: 100%;
+  border-radius: 5px;
+}
+
+.sect-img{
+  padding-top: 20px;
+}
+
+main > section:nth-child(3){
+  background-color: lightgreen;
+  margin-top: 30px;
+}
