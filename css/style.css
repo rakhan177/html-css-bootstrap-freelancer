@@ -1,6 +1,7 @@
-nav{
+nav, .footer-bottom{
   height: 80px;
   background-color: #2C3E50;
+  line-height: 80px;
 }
 
 header, main > section, footer{
@@ -86,10 +87,56 @@ input, textarea {
 
 footer{
   background-color: #3A546D;
+  padding-bottom: 0;
+}
+
+footer a span{
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  color: black;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
+footer span i{
+  color: white;
+}
+
+footer .row > div:nth-child(3) span{
+  color: #1ABC9C;
+}
+
+footer .footer-bottom{
+  margin-top: 30px;
 }
 
 @media screen and (max-width: 768px){
+
+  body{
+    font-size: 15px;
+  }
+
   main > section:nth-child(2) > .row > div:nth-of-type(2){
     padding-top: 20px;
   }
+
+  .star:before, .star:after {
+    width: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  footer .row > div:nth-child(1n+2){
+    padding-top: 30px;
+  }
+
+  main > section:nth-child(2), main > section:nth-child(3){
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+
 }
