@@ -1,34 +1,95 @@
-header{
+nav{
   height: 80px;
-  background-color: pink;
+  background-color: #2C3E50;
 }
 
-main > section{
-  text-align: center;
+header, main > section, footer{
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-weight: bold;
 }
 
-main > section:first-child{
-  background-color: lightgreen;
+header, section:nth-child(2), footer, .btn{
   color: #fff;
 }
 
-main > section:first-child img{
-  height: 200px;
+header, main section:nth-child(2), .btn-2{
+  background-color: #1ABC9C;
 }
 
-main > section:nth-child(2){
+main > section:nth-child(2), main > section:nth-child(3){
+  padding-left: 100px;
+  padding-right: 100px;
 }
 
-main > section:nth-child(2) img{
+header img{
+  height: 250px;
+}
+
+main img{
   width: 100%;
-  border-radius: 5px;
+  border-radius: 10px;
+  margin-bottom: 20px;
 }
 
-.sect-img{
+.title{
+  text-align: center;
+}
+
+.pdt{
   padding-top: 20px;
 }
 
-main > section:nth-child(3){
-  background-color: lightgreen;
+.pdb{
+  padding-bottom: 20px;
+}
+
+.btn{
+  border-radius: 5px;
+  padding: 12px;
+}
+
+.btn-1{
+  border: 1px solid #fff;
   margin-top: 30px;
+}
+
+.btn-2{
+  margin-top: 20px;
+}
+
+.star > i{
+  font-size: 20px;
+}
+
+.star:before, .star:after {
+  background-color: black;
+  content: '';
+  display: inline-block;
+  height: 4px;
+  width: 100px;
+  vertical-align: middle;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.star-white:before, .star-white:after{
+  background-color: #fff;
+}
+
+input, textarea {
+  font-size: 20px;
+  padding-bottom: 20px;
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+footer{
+  background-color: #3A546D;
+}
+
+@media screen and (max-width: < 768px){
+  main > section:nth-child(2) > .row > div:nth-of-type(2){
+    padding-top: 20px;
+  }
 }
