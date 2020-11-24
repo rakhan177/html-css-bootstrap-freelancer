@@ -1,13 +1,25 @@
-nav, .footer-bottom{
-  height: 80px;
-  background-color: #2C3E50;
-  line-height: 80px;
+.mm-navbar {
+  background-color: #2c3e50;
+  border: none;
+  border-radius: 0;
+}
+
+.mm-navbar .navbar-brand, .mm-navbar .navbar-nav>li>a {
+  color: #fff;
+}
+
+.mm-navbar .navbar-brand {
+  font-size: 24px;
 }
 
 header, main > section, footer{
   padding-top: 30px;
   padding-bottom: 30px;
   font-weight: bold;
+}
+
+header{
+  padding-top: 0;
 }
 
 header, section:nth-child(2), footer, .btn{
@@ -106,18 +118,33 @@ footer span i{
   color: white;
 }
 
-footer .row > div:nth-child(3) span{
+footer .row > div:nth-child(3) span, .mm-navbar .navbar-brand:hover, .mm-navbar .navbar-nav>li>a:hover{
   color: #1ABC9C;
 }
 
 footer .footer-bottom{
   margin-top: 30px;
+  height: 80px;
+  background-color: #2C3E50;
+  line-height: 80px;
 }
 
 @media screen and (max-width: 768px){
 
   body{
     font-size: 15px;
+  }
+
+  .mm-navbar .navbar-brand {
+    font-size: 18px;
+  }
+
+  h1{
+    font-size: 28px;
+  }
+
+  h2{
+    font-size: 24px;
   }
 
   main > section:nth-child(2) > .row > div:nth-of-type(2){
